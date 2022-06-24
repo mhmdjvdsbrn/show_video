@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% block head_title %}streaming_service_django_project{% endblock %}
+        </title>
+    </head>
+    <body>
+        <form method="GET"  action='/search/'>
+            <input type="text" name="q" placeholder="search for movie or tv show">
+            <button type="submit"> search </button>
+        </form>
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
